@@ -1,0 +1,358 @@
+:root {
+  --primary-color1: #495e57;
+  --primary-color2: #f4ce14;
+  --secondary-color1: #ee9972;
+  --secondary-color2: #fbdabb;
+  --white: #edefee;
+  --black: #333333;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  margin: 2rem 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: var(--primary-color1);
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+sup{
+  color: rgb(255, 94, 94);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+}
+
+.header {
+  grid-column: 3/11;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  grid-column: 1/-1;
+  background-color: var(--primary-color1);
+}
+
+.hero img {
+  grid-column: 8/11;
+  /* width: 23rem;
+  height: 20rem; */
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: -4rem;
+  margin-top: 1rem;
+}
+
+.hero .title {
+  grid-column: 3/7;
+  color: var(--white);
+}
+
+.hero .title h1 {
+  color: var(--primary-color2);
+}
+
+.hero .title p {
+  margin-bottom: 2rem;
+}
+
+.hero .title button {
+  background-color: var(--primary-color2);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+.specials {
+  grid-column: 3/11;
+  padding: 2rem 0;
+}
+
+.specials .title {
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.specials .title button {
+  background-color: var(--primary-color2);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.special-card {
+  width: 30%;
+  background-color: var(--white);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  overflow: hidden;
+}
+
+.special-card img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+}
+
+.special-card .detail {
+  padding: 1rem;
+}
+
+.special-card .name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.special-card .name p {
+  font-weight: bold;
+  color: var(--secondary-color1);
+}
+
+.special-card .description {
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  grid-column: 3/11;
+  margin: 4rem 0;
+}
+
+.testimonial h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial-card {
+  width: 20%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/-1;
+  background-color: var(--primary-color2);
+
+}
+
+.bottom > div {
+  grid-column: 3/11;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.bottom > div .history {
+  width: 50%;
+}
+
+.bottom > div .history h3 {
+  margin-bottom: 1rem;
+}
+
+.bottom > div .img {
+  text-align: right;
+}
+
+.bottom > div .img img{
+  width: 272px;
+  height: 338px;
+}
+
+.bottom > div .img .img2 {
+  margin-top: -15rem;
+  margin-right: 3rem;
+
+}
+
+.footer {
+  grid-column: 3/11;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  color: var(--white);
+}
+
+.footer img {
+  width: 10%;
+ 
+}
+
+.footer .nav a {
+  display: block;
+}
+
+.footer .social a {
+  display: block;
+}
+
+.reservation-container {
+  background-color: var(--primary-color1);
+  padding: 2rem 0;
+}
+
+.reservation {
+  width: 50%;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.reservation .img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation .img img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.reservation p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.reservation h3 {
+  margin-bottom: 2rem;
+}
+
+.reservation h1 {
+  color: var(--primary-color2);
+}
+
+.reservation form {
+  margin-top: 2rem;
+}
+
+.reservation form label {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.reservation form input,select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.reservation form input:focus,select:focus {
+  outline: none;
+} 
+
+.reservation button {
+  border: none;
+  background-color: var(--primary-color2);
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-radius: 16px;
+  font-size: 16px;
+  width: 30%;
+  margin: 2rem auto;
+  display: block;
+
+}
+
+.radio {
+  display: inline-block !important;
+  margin-right: 10px !important;
+  font-weight: 400 !important;
+}
+
+#standard,#outside {
+  width: auto;
+  
+}
+
+#standard {
+  margin-right: 4rem;
+}
+
+.seating {
+  margin-top: 2rem !important;
+  margin-right: 2rem !important;
+}
+
+.information h1 {
+  margin-bottom: 2rem;
+}
+
+.information button {
+  margin: 2rem 0 !important;
+}
